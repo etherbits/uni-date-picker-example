@@ -1,8 +1,6 @@
 import { useLocalStorage } from "./hooks/useLocalStorage";
 import { useEffect } from "react";
-import DatePicker from "uni-date-picker";
 import dayjs from "dayjs";
-
 import "dayjs/locale/en";
 import "dayjs/locale/ka";
 import { DateInput } from "./components/DateInput";
@@ -16,6 +14,7 @@ function App() {
 
   return (
     <div className="App">
+      <div>current locale: {locale}</div>
       <button
         onClick={() => {
           if (locale === "en") {
